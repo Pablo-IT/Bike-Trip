@@ -1,2 +1,2 @@
 # Bike-Trip
-Project with irregular .json data cleaned in python and visualized in Power BI.
+Project with irregular .json data cleaned in Python and visualized in Power BI.

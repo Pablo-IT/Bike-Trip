@@ -24,3 +24,5 @@ for msg in messages:
         translations[element] = translator.translate(element, dest='english').text
 
 messages['Message_EN'] = messages['Message_PL'].replace(translations)
+
+messages.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//MessagesTranslated.csv')

@@ -52,7 +52,10 @@ data['Trip'] = data['Year'].map(tripcategory)
 data = data.drop(['Year'], axis=1)
 data.set_index('Date', inplace=True)
 
+messages = pd.DataFrame(data.loc[:,'Message'])
+
 data.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Data.csv')
+messages.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Messages.csv')
 points.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Points.csv')
 
 points = pd.read_csv('C://Users//pawel//Datasets//Bike Trip//Final//Points.csv')

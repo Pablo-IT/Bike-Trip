@@ -54,6 +54,8 @@ data.set_index('Date', inplace=True)
 
 messages = pd.DataFrame(data.loc[:,'Message'])
 
+pprint.pprint(messages)
+
 data.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Data.csv')
 messages.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Messages.csv')
 points.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Points.csv')
@@ -169,3 +171,5 @@ coordinates.drop(['value'], axis=1, inplace=True)
 coordinates.set_index('Date', inplace=True)
 
 coordinates.to_csv('C://Users//pawel//Datasets//Bike Trip//Final//Coordinates.csv')
+
+pprint.pprint(coordinates)
